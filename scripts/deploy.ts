@@ -1,3 +1,5 @@
+// npx hardhat run scripts/deploy.ts --network sepolia
+
 import { ethers } from "hardhat";
 
 async function main() {
@@ -13,7 +15,7 @@ async function main() {
   const secretHash = ethers.keccak256(ethers.toUtf8Bytes(taSecret));
 
   console.log("-----------------------------------------");
-  console.log("Deploying ClassConsensusV4...");
+  console.log("Deploying ClassConsensus...");
   console.log("Professor (You):", professorAddress);
   console.log("TA Secret Hash:", secretHash);
 
